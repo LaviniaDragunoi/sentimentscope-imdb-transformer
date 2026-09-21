@@ -1,18 +1,31 @@
-# SentimentScope: Sentiment Analysis using Transformers!
+# SentimentScope - IMDB Sentiment Analysis with Transformers
 
-You are a Machine Learning Engineer at Cinescope, a growing entertainment company working to enhance its recommendation system. Your task is to fine-tune a transformer-based model for sentiment analysis using the IMDB dataset. By classifying reviews as positive or negative, you'll help the company better understand user sentiment and deliver more personalized experiences.
+SentimentScope is a sentiment analysis project developed as part of the **Udacity AI Programming program**.
 
-## Getting Started
+The goal of the project is to build and train a transformer-based model capable of classifying IMDB movie reviews as either **positive** or **negative**.
 
-Instructions for how to get a copy of the project running on your local machine.
+The project covers the complete machine learning workflow, from dataset preparation and tokenization to model training, validation, and evaluation.
 
-### Dependencies
+## Project Objectives
 
-You can find the dependencies in the requirements.txt file.
+The main objectives of this project are to:
 
-## Project Instructions
+- Load and explore the IMDB movie review dataset
+- Analyze sentiment distribution and review lengths
+- Prepare training, validation, and test datasets
+- Tokenize movie reviews using the `bert-base-uncased` tokenizer
+- Implement a custom PyTorch `Dataset`
+- Create PyTorch `DataLoader` objects for batch processing
+- Adapt a transformer architecture for binary classification
+- Implement the model training and validation loops
+- Evaluate the trained model on unseen test data
+- Save the trained model checkpoint for later inference
 
-The submission requires you to work on the starter file, complete it and submit in in one of three forms:
-- Submit through the workspace
-- Upload zip file
-- Submit a public GitHub repo.
+## Dataset
+
+The project uses the **IMDB Large Movie Review Dataset**, which contains labeled movie reviews for binary sentiment classification.
+
+Each review is classified as:
+
+- `0` - Negative
+- `1` - Positive
